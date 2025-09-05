@@ -10,7 +10,8 @@ esp_env.sh
 - This looks for a file called '.esp_ver' in the current directory and the ESP_BASE environment variable and uses it to determine what the required version of esp to source is and sources it... duh
 
 ## Usage
-- Run esp_install_ver.sh [VERSION_NUMBER] (in a project that already has a .esp_ver, run with no args to install the correct version for the application) to install the version of esp-idf required for a project
+- Run esp_install_ver.sh [VERSION_NUMBER] to install the version of esp-idf required for a project
+- - In a project that already has a .esp_ver, run with no args to install the correct version for the application
 - Create an .esp_ver file with just VERSION_NUMBER in it
 - Once installed use . esp_env.sh to source the correct esp version for the current project directory (from the same directory as the .esp_ver file)
 
