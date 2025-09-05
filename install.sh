@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 # Quick hacky install script, assumes everything is in the usual spot, use as a guide if unsure
 
 # Make esp_env available on the path
@@ -10,4 +10,4 @@ if [[ -d $HOME/.bash_aliases ]]; then
 fi
 # Set up ESP_BASE in the appropriate place
 mkdir $HOME/.esp/
-echo 'export $ESP_BASE="$HOME/.esp/"' >> $HOME/.bashrc
+echo 'export ESP_BASE="$HOME/.esp/"' >> $HOME/.bashrc
