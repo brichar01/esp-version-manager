@@ -8,7 +8,13 @@ if [[ -z "$ESP_BASE" ]]; then
   ESP_BASE="$HOME/.esp"
 fi
 
-echo "Attempting to install ESP-IDF version $1 to $ESP_BASE/v$1"
+if [[ -z $1 ]]; then
+  VERSION=(< .esp_ver)
+else
+  VERSION=$1
+fi
+
+echo "Attempting to install ESP-IDF version $VERSION to $ESP_BASE/v$VERSION"
 
 if [[ -d "$ESP_BASE/v$1" ]]; then
   echo "Already installed!"
