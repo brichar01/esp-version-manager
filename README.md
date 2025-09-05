@@ -1,2 +1,10 @@
 # ESP-IDF version manager
-Tool to manage the version of esp-idf needed for an application, use ./esp_install_ver.sh [VERSION_NUMBER] to install a version of esp-idf (making sure that you have a non-system version of python on ubuntu), if required, use the environment variable ESP_BASE to control the install directory, then add 'export ESP_BASE="$HOME/.esp"' to your bash profile (.profile, .bashrc or .bash_profile). Copy esp_env.sh to your path (eg. .local/bin/) and use/alias '. esp_env.sh' to activate the directory. This looks for a file called '.esp_ver' in the current directory and the ESP_BASE environment variable and uses it to determine what the required version of esp to source is. Alternatively, use the install.sh script, which sets everything up for default install.
+Tool to manage the version of esp-idf needed for an application, 
+
+Use ./esp_install_ver.sh [VERSION_NUMBER] to install a version of esp-idf (making sure that you have a non-system version of python on ubuntu), 
+- if required, use the environment variable ESP_BASE to control the install directory, 
+
+Then add 'export ESP_BASE="$HOME/.esp"' to your bash profile (.profile, .bashrc or .bash_profile). 
+- Copy esp_env.sh to your path (eg. .local/bin/) and use/alias '. esp_env.sh' to activate the directory. This looks for a file called '.esp_ver' in the current directory and the ESP_BASE environment variable and uses it to determine what the required version of esp to source is. 
+
+Alternatively, use the install.sh script, which sets everything up for default install.
